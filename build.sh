@@ -1,9 +1,14 @@
 #!/bin/bash
 
 # Build the Docker image
-docker build -t react-js-app .
+docker build -t myreactimg .
 
 # Run Docker Compose
-docker-compose up
-chmod +x build.sh
+docker-compose --down
+
+docker-compose up -d
+
+
+
+
 
