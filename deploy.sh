@@ -12,4 +12,4 @@ docker tag myreactimg karthickselvakumar1999/myreactimg:dev
 
 # Push the Docker image to the registry
 docker push karthickselvakumar1999/myreactimg:dev
-
+echo "the image has been pushed to docker hub"
