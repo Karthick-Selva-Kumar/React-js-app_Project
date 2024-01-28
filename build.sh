@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Build the Docker image
-docker build -t myreactimg:latest .
+docker build -t myreactimg .
 docker images
 
 # Run Docker Compose
