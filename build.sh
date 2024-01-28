@@ -2,6 +2,7 @@
 
 # Build the Docker image
 docker build -t myreactimg:latest .
+docker images
 
 # Run Docker Compose
 docker-compose --down
