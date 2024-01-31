@@ -2,13 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Login into DockerHub') {
-            steps {
-                withCredentials([usernamePassword(credentialsId: 'docker', passwordVariable: 'DOCKER_PASSWORD', usernameVariable: 'DOCKER_USERNAME')]) {
-                    sh "echo \$DOCKER_PASSWORD | docker login -u \$DOCKER_USERNAME --password-stdin docker.io"
-                }
-            }
-        }
 
         stage('Changing the File Permission') {
             steps {
