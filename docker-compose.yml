@@ -3,7 +3,6 @@ version: '3'
 services:
   web:
     image: myreactimg:latest
-    container_name: myreact
     ports:
       - "80:80"
     restart: always
