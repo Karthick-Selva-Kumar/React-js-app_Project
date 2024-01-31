@@ -8,8 +8,8 @@ docker-compose up -d
 echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin docker.io
 
 #tagging the image:
-docker tag myreactimg karthickselvakumar1999/myreactimg:dev
+docker tag myreactimg karthickselvakumar1999/prod
 
 # Push the Docker image to the registry
-docker push karthickselvakumar1999/myreactimg:dev
+docker push karthickselvakumar1999/prod
 echo "the image has been pushed to docker hub"
