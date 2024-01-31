@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Run Docker Compose
-docker-compose --down
+docker-compose down || true
 docker-compose up -d
 
 # Login to Docker registry
